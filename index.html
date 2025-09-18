@@ -63,22 +63,42 @@
     <div class="container">
       <div class="sidebar">
         <h2>Recent Posts</h2>
-        <ul>
-          <li>
-            <a href="posts/2025-09-18-skill-of-patience.html">patience</a>
-          </li>
-          <li>
-            <a href="posts/2025-09-18-careful-what-you-wish-for.html"
-              >careful what you wish for</a
-            >
-          </li>
-          <li><a href="posts/2025-09-17-first-post.html">My First Post</a></li>
-        </ul>
+        <ul id="post-links"></ul>
       </div>
       <div class="content">
         <h1>start</h1>
         <div class="date">September 17, 2025</div>
       </div>
     </div>
+    <script>
+      // Array of link objects
+      const posts = [
+        {
+          href: "posts/2025-09-18-skill-of-patience.html",
+          title: "patience",
+        },
+        {
+          href: "posts/2025-09-18-careful-what-you-wish-for.html",
+          title: "careful what you wish for",
+        },
+        {
+          href: "posts/2025-09-17-first-post.html",
+          title: "My First Post",
+        },
+      ];
+
+      // Get the ul element
+      const postList = document.getElementById("post-links");
+
+      // Generate list items dynamically
+      posts.forEach((post) => {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.href = post.href;
+        a.textContent = post.title;
+        li.appendChild(a);
+        postList.appendChild(li);
+      });
+    </script>
   </body>
 </html>
