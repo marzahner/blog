@@ -1,5 +1,9 @@
 const posts = [
   {
+    href: "posts/2025-09-21-23:40-the-kanji-writer.html",
+    title: "we dont learn",
+  },
+  {
     href: "posts/2025-09-21-20:23-learning-is-same.html",
     title: "we learn",
   },
