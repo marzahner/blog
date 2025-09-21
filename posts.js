@@ -1,10 +1,10 @@
 const posts = [
   {
-    href: "2025-09-21-20:23-learning-is-same.html",
+    href: "posts/2025-09-21-20:23-learning-is-same.html",
     title: "we learn",
   },
   {
-    href: "2025-09-18-12:39-we-get-better.html",
+    href: "posts/2025-09-18-12:39-we-get-better.html",
     title: "only up",
   },
   {
@@ -13,7 +13,7 @@ const posts = [
   },
   {
     href: "posts/2025-09-18-careful-what-you-wish-for.html",
-    title: "careful what you wish for",
+    title: "careful wishing",
   },
   {
     href: "posts/2025-09-17-first-post.html",
