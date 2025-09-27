@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Minimal Blog</title>
+    <title>wibsite</title>
     <style>
       body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -34,7 +34,7 @@
         padding: 0;
       }
       .sidebar li {
-        margin-bottom: 10px;
+        margin-bottom: 15px; /* Increased to accommodate date */
       }
       .sidebar a {
         color: #007bff;
@@ -42,6 +42,12 @@
       }
       .sidebar a:hover {
         text-decoration: underline;
+      }
+      .sidebar .post-date {
+        color: #b7b7b7;
+        font-size: 0.5em;
+        display: block; /* Makes the date appear below the link */
+        /* margin-top: 4px; */
       }
       .content {
         flex: 1;
@@ -68,9 +74,11 @@
       <div class="content">
         <h1>start</h1>
         <div class="date">September 17, 2025</div>
+        <img src="images/notahorse.avif" alt="This isnt a horse" />
       </div>
     </div>
     <script src="posts.js"></script>
+
     <script>
       // Get the ul element
       const postList = document.getElementById("post-links");
@@ -82,6 +90,13 @@
         a.href = post.href;
         a.textContent = post.title;
         li.appendChild(a);
+
+        // Create and append date element
+        const dateSpan = document.createElement("span");
+        dateSpan.className = "post-date";
+        dateSpan.textContent = post.date; // Use the date field
+        li.appendChild(dateSpan);
+
         postList.appendChild(li);
       });
     </script>
