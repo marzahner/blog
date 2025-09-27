@@ -25,7 +25,7 @@ const posts = [
     date: "2025-09-18・10:57",
   },
   {
-    href: "posts/careful-what-you-wish-for.html",
+    href: "posts/careful-wishing.html",
     title: "careful wishing",
     date: "2025-09-18・00:35",
   },
