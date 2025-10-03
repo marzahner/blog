@@ -1,5 +1,10 @@
 const posts = [
   {
+    href: "posts/we-fat-we-stupit.html",
+    title: "we fat we stupit",
+    date: "2025-10-03・20:25",
+  },
+  {
     href: "posts/ich-raste.html",
     title: "ICH RASTE",
     date: "2025-09-30・21:32",
